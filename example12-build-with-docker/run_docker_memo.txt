@@ -1,0 +1,20 @@
+1.docker image list
+Joey-MacBook-Pro:Docker_workspace joey$ docker image list
+EPOSITORY           TAG                 IMAGE ID            CREATED             SIZE
+example-golang       latest              3b93d46b6f87        16 minutes ago      780MB
+golang               latest              df6ac9d1bf64        21 hours ago        774MB
+
+2.docker run -d example-golang
+Joey-MacBook-Pro:Docker_workspace joey$ docker run -d example-golang
+cb4cf2adfb2e18c219394dd8bf48bfbaba86048331792003db6ce73ad63f51cc
+
+3.docker ps -a
+Joey-MacBook-Pro:Docker_workspace joey$ docker ps -a
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                      PORTS               NAMES
+cb4cf2adfb2e        example-golang      "/app/main"         46 seconds ago      Exited (0) 47 seconds ago                       awesome_haibt
+
+
+4.docker start -ai ${CONTAINER_ID}
+Joey-MacBook-Pro:Docker_workspace joey$ docker start -ai cb4cf2adfb2e
+Hi, 一天學會 golang
+200 OK
