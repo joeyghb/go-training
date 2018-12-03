@@ -14,7 +14,7 @@
 
 package main
 
-import "github.com/go-training/training/example06/cobra/cmd"
+import "github.com/joeyghb/go-training/example06/cobra/cmd"
 
 func main() {
 	cmd.Execute()

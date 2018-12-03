@@ -5,6 +5,9 @@ import "fmt"
 func printValue(v interface{}) {
 	if v, ok := v.(string); ok {
 		fmt.Printf("The value of v is: %#v", v)
+		fmt.Printf(v)
+		fmt.Printf(ok)
+		fmt.Printf("The value of v is: %#v\n", v)
 	} else {
 		fmt.Println("Oops, it is not a string!")
 	}

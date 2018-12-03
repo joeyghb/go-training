@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	_ "github.com/go-training/training/example16-init-func/bar"
-	_ "github.com/go-training/training/example16-init-func/foo"
+	_ "github.com/joeyghb/go-training/example16-init-func/bar"
+	_ "github.com/joeyghb/go-training/example16-init-func/foo"
 )
 
 var global = convert()
